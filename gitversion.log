@@ -1,0 +1,158 @@
+INFO [09/13/23 18:15:35:96] Dumping commit graph: 
+INFO [09/13/23 18:15:36:00] *   9c29254 41 seconds ago  (refs/stash)
+|\  
+| * 4b63d91 41 seconds ago 
+|/  
+* 0ec5182 4 minutes ago  (origin/develop, develop)
+*   2ce18d7 16 minutes ago 
+|\  
+| * 371f96c 20 minutes ago  (HEAD, tag: 0.2.1, origin/main, main)
+* | 80a4a8d 17 minutes ago 
+* | b43c920 32 minutes ago  (origin/release/0.3.0, release/0.3.0)
+|/  
+* a94e4c4 33 minutes ago  (tag: 0.2.0)
+* 57beaa6 34 minutes ago 
+
+INFO [09/13/23 18:15:36:00] Working directory: C:\Users\MKo\git\oss\mkoertgen\gitversion-test
+INFO [09/13/23 18:15:36:02] Project root is: C:\Users\MKo\git\oss\mkoertgen\gitversion-test\
+INFO [09/13/23 18:15:36:02] DotGit directory is: C:\Users\MKo\git\oss\mkoertgen\gitversion-test\.git
+INFO [09/13/23 18:15:36:02] Branch from build environment: 
+INFO [09/13/23 18:15:36:05] Using latest commit on specified branch
+INFO [09/13/23 18:15:36:12] Begin: Getting branches containing the commit '371f96c'.
+  INFO [09/13/23 18:15:36:12] Trying to find direct branches.
+  INFO [09/13/23 18:15:36:12] No direct branches found, searching through all branches.
+  INFO [09/13/23 18:15:36:12] Searching for commits reachable from 'develop'.
+  INFO [09/13/23 18:15:36:13] The branch 'develop' has a matching commit.
+  INFO [09/13/23 18:15:36:13] Searching for commits reachable from 'main'.
+  INFO [09/13/23 18:15:36:13] The branch 'main' has a matching commit.
+  INFO [09/13/23 18:15:36:13] End: Getting branches containing the commit '371f96c'. (Took: 6.41ms)
+  INFO [09/13/23 18:15:36:16] Running against branch: (no branch) (371f96c docs: hotfix on main)
+  INFO [09/13/23 18:15:36:17] Current commit is tagged with version 0.2.1, version calculation is for metadata only.
+  INFO [09/13/23 18:15:36:17] 0 commits found between 371f96c docs: hotfix on main and 371f96c docs: hotfix on main
+  INFO [09/13/23 18:15:36:17] Begin: Calculating base versions
+    INFO [09/13/23 18:15:36:17] No branch configuration found for branch (no branch), falling back to default configuration
+    INFO [09/13/23 18:15:36:18] Begin: Attempting to inherit branch configuration from parent branch
+      INFO [09/13/23 18:15:36:18] Begin: Finding branch source of '(no branch)'
+        INFO [09/13/23 18:15:36:19] Begin: Finding merge base between '(no branch)' and 'develop'.
+          INFO [09/13/23 18:15:36:19] Found merge base of 371f96c docs: hotfix on main
+          INFO [09/13/23 18:15:36:19] Merge base was due to a forward merge, next merge base is a94e4c4 docs: commit to tag
+          INFO [09/13/23 18:15:36:19] Merge base of (no branch)' and 'develop is a94e4c4 docs: commit to tag
+        INFO [09/13/23 18:15:36:19] End: Finding merge base between '(no branch)' and 'develop'. (Took: 3.66ms)
+        INFO [09/13/23 18:15:36:19] Begin: Finding merge base between '(no branch)' and 'main'.
+          INFO [09/13/23 18:15:36:19] Found merge base of 371f96c docs: hotfix on main
+          INFO [09/13/23 18:15:36:19] Merge base of (no branch)' and 'main is 371f96c docs: hotfix on main
+        INFO [09/13/23 18:15:36:19] End: Finding merge base between '(no branch)' and 'main'. (Took: 0.41ms)
+        INFO [09/13/23 18:15:36:19] Begin: Finding merge base between '(no branch)' and 'release/0.3.0'.
+          INFO [09/13/23 18:15:36:19] Found merge base of a94e4c4 docs: commit to tag
+          INFO [09/13/23 18:15:36:19] Merge base of (no branch)' and 'release/0.3.0 is a94e4c4 docs: commit to tag
+        INFO [09/13/23 18:15:36:19] End: Finding merge base between '(no branch)' and 'release/0.3.0'. (Took: 0.73ms)
+        INFO [09/13/23 18:15:36:19] Begin: Finding merge base between '(no branch)' and 'origin/develop'.
+          INFO [09/13/23 18:15:36:19] Found merge base of 371f96c docs: hotfix on main
+          INFO [09/13/23 18:15:36:19] Merge base was due to a forward merge, next merge base is a94e4c4 docs: commit to tag
+          INFO [09/13/23 18:15:36:19] Merge base of (no branch)' and 'origin/develop is a94e4c4 docs: commit to tag
+        INFO [09/13/23 18:15:36:19] End: Finding merge base between '(no branch)' and 'origin/develop'. (Took: 1.77ms)
+        INFO [09/13/23 18:15:36:19] Begin: Finding merge base between '(no branch)' and 'origin/main'.
+          INFO [09/13/23 18:15:36:19] Found merge base of 371f96c docs: hotfix on main
+          INFO [09/13/23 18:15:36:19] Merge base of (no branch)' and 'origin/main is 371f96c docs: hotfix on main
+        INFO [09/13/23 18:15:36:19] End: Finding merge base between '(no branch)' and 'origin/main'. (Took: 0.35ms)
+        INFO [09/13/23 18:15:36:19] Begin: Finding merge base between '(no branch)' and 'origin/release/0.3.0'.
+          INFO [09/13/23 18:15:36:20] Found merge base of a94e4c4 docs: commit to tag
+          INFO [09/13/23 18:15:36:20] Merge base of (no branch)' and 'origin/release/0.3.0 is a94e4c4 docs: commit to tag
+        INFO [09/13/23 18:15:36:20] End: Finding merge base between '(no branch)' and 'origin/release/0.3.0'. (Took: 0.74ms)
+        INFO [09/13/23 18:15:36:20] Multiple source branches have been found, picking the first one (main).
+This may result in incorrect commit counting.
+Options were:
+main, origin/main, develop, release/0.3.0, origin/develop, origin/release/0.3.0
+      INFO [09/13/23 18:15:36:20] End: Finding branch source of '(no branch)' (Took: 16.86ms)
+      INFO [09/13/23 18:15:36:20] Begin: Getting branches containing the commit '371f96c'.
+        INFO [09/13/23 18:15:36:20] Trying to find direct branches.
+        INFO [09/13/23 18:15:36:20] No direct branches found, searching through all branches.
+        INFO [09/13/23 18:15:36:20] Searching for commits reachable from 'develop'.
+        INFO [09/13/23 18:15:36:20] The branch 'develop' has a matching commit.
+        INFO [09/13/23 18:15:36:20] Searching for commits reachable from 'main'.
+        INFO [09/13/23 18:15:36:20] The branch 'main' has a matching commit.
+        INFO [09/13/23 18:15:36:20] Searching for commits reachable from 'release/0.3.0'.
+        INFO [09/13/23 18:15:36:20] The branch 'release/0.3.0' has no matching commits.
+      INFO [09/13/23 18:15:36:20] End: Getting branches containing the commit '371f96c'. (Took: 1.41ms)
+      INFO [09/13/23 18:15:36:20] Begin: Getting branches containing the commit '371f96c'.
+        INFO [09/13/23 18:15:36:20] Trying to find direct branches.
+        INFO [09/13/23 18:15:36:20] No direct branches found, searching through all branches.
+        INFO [09/13/23 18:15:36:20] Searching for commits reachable from 'develop'.
+        INFO [09/13/23 18:15:36:20] The branch 'develop' has a matching commit.
+        INFO [09/13/23 18:15:36:20] Searching for commits reachable from 'main'.
+        INFO [09/13/23 18:15:36:20] The branch 'main' has a matching commit.
+        INFO [09/13/23 18:15:36:20] Searching for commits reachable from 'release/0.3.0'.
+        INFO [09/13/23 18:15:36:20] The branch 'release/0.3.0' has no matching commits.
+      INFO [09/13/23 18:15:36:20] End: Getting branches containing the commit '371f96c'. (Took: 1.34ms)
+      INFO [09/13/23 18:15:36:20] Found possible parent branches: 
+      WARN [09/13/23 18:15:36:20] Failed to inherit Increment branch configuration, no branches found.
+Falling back to develop branch config
+    INFO [09/13/23 18:15:36:20] End: Attempting to inherit branch configuration from parent branch (Took: 26.72ms)
+    INFO [09/13/23 18:15:36:21] Fallback base version: 0.1.0 with commit count source 57beaa64fd3b5db41b2870799dd366797d906164
+    INFO [09/13/23 18:15:36:22] Git tag '0.2.1': 0.2.1 with commit count source 371f96c24405d9ace9917d70ea68a1341033aca9
+    INFO [09/13/23 18:15:36:22] Begin: Finding merge base between 'release/0.3.0' and '(no branch)'.
+      INFO [09/13/23 18:15:36:22] Found merge base of a94e4c4 docs: commit to tag
+      INFO [09/13/23 18:15:36:22] Merge base of release/0.3.0' and '(no branch) is a94e4c4 docs: commit to tag
+    INFO [09/13/23 18:15:36:22] End: Finding merge base between 'release/0.3.0' and '(no branch)'. (Took: 1.04ms)
+    INFO [09/13/23 18:15:36:22] Begin: Finding branch source of 'release/0.3.0'
+      INFO [09/13/23 18:15:36:22] Begin: Finding merge base between 'release/0.3.0' and 'develop'.
+        INFO [09/13/23 18:15:36:22] Found merge base of b43c920 docs: commit to pre-release
+        INFO [09/13/23 18:15:36:22] Merge base of release/0.3.0' and 'develop is b43c920 docs: commit to pre-release
+      INFO [09/13/23 18:15:36:22] End: Finding merge base between 'release/0.3.0' and 'develop'. (Took: 1.43ms)
+      INFO [09/13/23 18:15:36:22] Begin: Finding merge base between 'release/0.3.0' and 'main'.
+        INFO [09/13/23 18:15:36:22] Found merge base of a94e4c4 docs: commit to tag
+        INFO [09/13/23 18:15:36:23] Merge base of release/0.3.0' and 'main is a94e4c4 docs: commit to tag
+      INFO [09/13/23 18:15:36:23] End: Finding merge base between 'release/0.3.0' and 'main'. (Took: 1.08ms)
+      INFO [09/13/23 18:15:36:23] Multiple source branches have been found, picking the first one (develop).
+This may result in incorrect commit counting.
+Options were:
+develop, main
+    INFO [09/13/23 18:15:36:23] End: Finding branch source of 'release/0.3.0' (Took: 5.04ms)
+    INFO [09/13/23 18:15:36:23] Release branch exists -> Version in branch name: 0.3.0 with commit count source a94e4c46a95de5862c76c3437e023b6fc713f9ef
+    INFO [09/13/23 18:15:36:23] Git tag '0.2.1': 0.2.1 with commit count source 371f96c24405d9ace9917d70ea68a1341033aca9
+    INFO [09/13/23 18:15:36:24] Found multiple base versions which will produce the same SemVer (0.4.0), taking oldest source for commit counting (Release branch exists -> Version in branch name)
+    INFO [09/13/23 18:15:36:24] Base version used: Release branch exists -> Version in branch name: 0.3.0 with commit count source a94e4c46a95de5862c76c3437e023b6fc713f9ef
+  INFO [09/13/23 18:15:36:24] End: Calculating base versions (Took: 74.07ms)
+  INFO [09/13/23 18:15:36:24] 1 commits found between a94e4c4 docs: commit to tag and 371f96c docs: hotfix on main
+  INFO [09/13/23 18:15:36:25] Using branch name to calculate version tag
+  INFO [09/13/23 18:15:36:25] Begin: Getting version tags from branch '(no branch)'.
+  INFO [09/13/23 18:15:36:25] End: Getting version tags from branch '(no branch)'. (Took: 4.21ms)
+Executing GenerateSetVersionMessage for 'LocalBuild'.
+
+Executing GenerateBuildLogOutput for 'LocalBuild'.
+{
+  "Major": 0,
+  "Minor": 3,
+  "Patch": 0,
+  "PreReleaseTag": "-no-branch-.1",
+  "PreReleaseTagWithDash": "--no-branch-.1",
+  "PreReleaseLabel": "-no-branch-",
+  "PreReleaseLabelWithDash": "--no-branch-",
+  "PreReleaseNumber": 1,
+  "WeightedPreReleaseNumber": 1,
+  "BuildMetaData": 1,
+  "BuildMetaDataPadded": "0001",
+  "FullBuildMetaData": "1.Branch.-no-branch-.Sha.371f96c24405d9ace9917d70ea68a1341033aca9",
+  "MajorMinorPatch": "0.3.0",
+  "SemVer": "0.3.0--no-branch-.1",
+  "LegacySemVer": "0.3.0--no-branch-1",
+  "LegacySemVerPadded": "0.3.0--no-branch-0001",
+  "AssemblySemVer": "0.3.0.0",
+  "AssemblySemFileVer": "0.3.0.0",
+  "FullSemVer": "0.3.0--no-branch-.1+1",
+  "InformationalVersion": "0.3.0--no-branch-.1+1.Branch.-no-branch-.Sha.371f96c24405d9ace9917d70ea68a1341033aca9",
+  "BranchName": "(no branch)",
+  "EscapedBranchName": "-no-branch-",
+  "Sha": "371f96c24405d9ace9917d70ea68a1341033aca9",
+  "ShortSha": "371f96c",
+  "NuGetVersionV2": "0.3.0--no-branch-0001",
+  "NuGetVersion": "0.3.0--no-branch-0001",
+  "NuGetPreReleaseTagV2": "-no-branch-0001",
+  "NuGetPreReleaseTag": "-no-branch-0001",
+  "VersionSourceSha": "a94e4c46a95de5862c76c3437e023b6fc713f9ef",
+  "CommitsSinceVersionSource": 1,
+  "CommitsSinceVersionSourcePadded": "0001",
+  "UncommittedChanges": 1,
+  "CommitDate": "2023-09-13"
+}
+  INFO [09/13/23 18:15:36:29] Done writing 

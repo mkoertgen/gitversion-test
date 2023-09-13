@@ -13,6 +13,42 @@ For the history
 - develop: Merged main/hotfix
 - develop: Documentation
 
+## Reproduce
+
+```shell
+# Checkout the tag
+$ git checkout 0.2.1
+Note: switching to '0.2.1'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+...
+HEAD is now at 371f96c docs: hotfix on main
+$ gitversion
+{
+  "Major": 0,
+  "Minor": 3,
+  "Patch": 0,
+  ...
+  "SemVer": "0.3.0--no-branch-.1",  // <---- this is wrong!
+  ...
+  "FullSemVer": "0.3.0--no-branch-.1+1",
+  "InformationalVersion": "0.3.0--no-branch-.1+1.Branch.-no-branch-.Sha.371f96c24405d9ace9917d70ea68a1341033aca9",
+  ...
+}
+
+$ gitversion /diag > gitversion.log
+
+# Checkout the main branch again
+$ git switch main
+$ gitversion
+{
+  "Major": 0,
+  "Minor": 2,
+  "Patch": 1,
+  "FullBuildMetaData": "Branch.main.Sha.371f96c24405d9ace9917d70ea68a1341033aca9",
+  "SemVer": "0.2.1", // <---- this is correct!
+```
+
 ## Related Issues
 
 - [[Bug] 5.12 bumps major based on the previous merges instead of the last tag and branch convention #3644](https://github.com/GitTools/GitVersion/issues/3644)
