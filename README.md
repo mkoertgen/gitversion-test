@@ -1,7 +1,10 @@
 # gitversion-test
 
 This repository is used to test a special edge case in GitVersion where the calculated version on a tag is not correct.
-For the history
+
+Checking out a tag results in a detached HEAD. In that case GitVersion tries to get the branches containing the commit, cf.
+
+- [GitVersionContextFactory.cs#L30](https://github.com/GitTools/GitVersion/blob/5014a94b9159f64899254da10979c1b2cd651cdf/src/GitVersion.Core/Core/GitVersionContextFactory.cs#L30)
 
 ## History
 
