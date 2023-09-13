@@ -6,6 +6,26 @@ Checking out a tag results in a detached HEAD. In that case GitVersion tries to 
 
 - [GitVersionContextFactory.cs#L30](https://github.com/GitTools/GitVersion/blob/5014a94b9159f64899254da10979c1b2cd651cdf/src/GitVersion.Core/Core/GitVersionContextFactory.cs#L30)
 
+It then finds the `develop`-branch containing the merged commit. Because the develop branch is tracked as a merge target by default the version is calculated based on the branch instead of the tag, cf.
+
+```yaml
+# $ gitversion /showconfig
+# GitVersion.yml
+...
+branches:
+  develop:
+    track-merge-target: true # <---- this is the default causing the issue
+  release:
+ release:
+    track-merge-target: false
+...
+```
+
+## Solution
+
+The solution is to merge the hotfix commit back also to the release branches.
+This way the `develop` branch is not the only branch containing the commit and the version is calculated correctly.
+
 ## History
 
 - 0.1.0: Initial commit
