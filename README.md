@@ -23,6 +23,7 @@ Note: switching to '0.2.1'.
 You are in 'detached HEAD' state. You can look around, make experimental
 ...
 HEAD is now at 371f96c docs: hotfix on main
+# Verify that version is calculated incorrectly on tag
 $ gitversion
 {
   "Major": 0,
@@ -40,6 +41,15 @@ $ gitversion /diag > gitversion.log
 
 # Checkout the main branch again
 $ git switch main
+# Verify that main == 0.2.1
+$ git log
+commit 371f96c24405d9ace9917d70ea68a1341033aca9 (HEAD -> main, tag: 0.2.1, origin/main)
+Author: Marcel Körtgen <marcel.koertgen@gmail.com>
+Date:   Wed Sep 13 17:55:59 2023 +0200
+
+    docs: hotfix on main
+
+# Verify that version is calculated correctly on main/master branch
 $ gitversion
 {
   "Major": 0,
