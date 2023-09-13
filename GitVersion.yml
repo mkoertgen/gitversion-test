@@ -1,7 +1,5 @@
 mode: ContinuousDelivery
-branches:
-  develop:
-    track-merge-target: false # true
+branches: {}
 ignore:
   sha: []
 merge-message-formats: {}
